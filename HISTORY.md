@@ -1,4 +1,4 @@
-# DocBlockr Extended Changelog
+# sublime-jsdocs Extended Changelog
 
 - **v2.14.1**, *17 Aug 2015*
   - Fix deindentation bug with reparsing doc blocks
@@ -171,9 +171,9 @@
   - A configuration option can be set so that either `@return` or `@returns` is used in your documentation.
   - Language-specific tags now will only show for that language (eg: PHP has no `@interface` tag).
 - **v2.1.3**, *31 December 2011*
-  - Changed path for macro file to point to `Packages/DocBlockr`. If you are having issues, make sure that the plugin is installed in that location (**not** the previous location `Packages/JSDocs`).
+  - Changed path for macro file to point to `Packages/sublime-jsdocs`. If you are having issues, make sure that the plugin is installed in that location (**not** the previous location `Packages/JSDocs`).
 - **v2.1.2**, *31 December 2011*
-  - Renamed from *JSDocs* to *DocBlockr*, since it now does more than just Javascript.
+  - Renamed from *JSDocs* to *sublime-jsdocs*, since it now does more than just Javascript.
 - **v2.1.1**, *23 November 2011*
   - Fixed bug which broke the completions list
 - **v2.1.0**, *19 November 2011*
@@ -198,7 +198,7 @@
   - Double slash comments (`// like this`) are extended when `enter` is pressed
   - Class definitions detected and treated slightly differently (no return values pre-filled)
 - **v1.1.0**, *3 October 2011*
-  - DocBlockr parses the line following the comment to automatically prefill some documentation for you.
+  - sublime-jsdocs parses the line following the comment to automatically prefill some documentation for you.
   - Settings available via menu
 - **v1.0.0**, *28 September 2011*
   - Initial release

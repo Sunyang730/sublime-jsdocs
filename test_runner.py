@@ -421,7 +421,7 @@ class RunDocBlockrTests(sublime_plugin.WindowCommand):
         self.window.run_command('show_panel', {'panel': 'console'})
 
         print('')
-        print('DocBlockr Tests')
+        print('sublime-jsdocs Tests')
         print('===============')
 
         suite = unittest.TestSuite()

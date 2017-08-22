@@ -8,14 +8,14 @@
                 "children":
                 [
                     {
-                        "caption": "DocBlockr",
+                        "caption": "sublime-jsdocs",
                         "children":
                         [
                             {
                                 "caption": "README",
                                 "command": "open_file", "args":
                                 {
-                                    "file": "${packages}/DocBlockr/README.md"
+                                    "file": "${packages}/sublime-jsdocs/README.md"
                                 }
                             },
                             {
@@ -25,7 +25,7 @@
                                 "caption": "Settings – Default",
                                 "command": "open_file", "args":
                                 {
-                                    "file": "${packages}/DocBlockr/Base File.sublime-settings"
+                                    "file": "${packages}/sublime-jsdocs/Base File.sublime-settings"
                                 }
                             },
                             {
@@ -42,7 +42,7 @@
                                 "caption": "LICENSE",
                                 "command": "open_file",
                                 "args": {
-                                    "file": "${packages}/DocBlockr/LICENSE"
+                                    "file": "${packages}/sublime-jsdocs/LICENSE"
                                 }
                             }
                         ]

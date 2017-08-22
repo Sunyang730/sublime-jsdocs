@@ -1,4 +1,4 @@
-You want to contribute to DocBlockr?
+You want to contribute to sublime-jsdocs?
 
 **THEN YOU, SIR OR MADAM, ARE MY FRIEND.**
 

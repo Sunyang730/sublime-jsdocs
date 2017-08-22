@@ -1,5 +1,5 @@
 """
-DocBlockr v2.14.1
+sublime-jsdocs v2.14.1
 by Nick Fisher, and all the great people listed in CONTRIBUTORS.md
 https://github.com/spadgos/sublime-jsdocs
 
@@ -149,7 +149,6 @@ def getDocBlockRegion(view, point):
 class JsdocsCommand(sublime_plugin.TextCommand):
 
     def run(self, edit, inline=False):
-
         self.initialize(self.view, inline)
 
         if self.parser.isExistingComment(self.line):
@@ -1047,7 +1046,6 @@ class JsdocsActionscript(JsdocsParser):
     def getArgType(self, arg):
         # could actually figure it out easily, but it's not important for the documentation
         return None
-
 
 class JsdocsObjC(JsdocsParser):
 

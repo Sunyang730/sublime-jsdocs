@@ -54,7 +54,7 @@
   "jsdocs_notation_map": [],
 
   // Since there seems to be no agreed standard for "@return" or "@returns", use this setting to rename it as you wish.
-  "jsdocs_return_tag": "@return",
+  "jsdocs_return_tag": "@returns",
 
   // Add a '[function_name description]' for the function block
   "jsdocs_function_description": true,
@@ -113,7 +113,7 @@
   // indicates whether the @method tag should be added automatically
   "jsdocs_autoadd_method_tag": false,
 
-  // If set to true, DocBlockr won't parse any code, providing no default templates. All other functions work as normal.
+  // If set to true, sublime-jsdocs won't parse any code, providing no default templates. All other functions work as normal.
   "jsdocs_simple_mode": false,
 
   // If set to true, primitives such as "Number" and "String" will be documented as "number" and "string".

@@ -1,6 +1,6 @@
-# DocBlockr
+# sublime-jsdocs
 
-DocBlockr is a package for [Sublime Text 2 & 3][sublime] which makes writing documentation a breeze. DocBlockr supports **JavaScript** (including ES6), **PHP**, **ActionScript**, **Haxe**, **CoffeeScript**, **TypeScript**, **Java**, **Apex**, **Groovy**, **Objective C**, **C**, **C++** and **Rust**.
+sublime-jsdocs is a package for [Sublime Text 2 & 3][sublime] which makes writing documentation a breeze. sublime-jsdocs supports **JavaScript** (including ES6), **PHP**, **ActionScript**, **Haxe**, **CoffeeScript**, **TypeScript**, **Java**, **Apex**, **Groovy**, **Objective C**, **C**, **C++** and **Rust**.
 
 ## Installation
 
@@ -8,7 +8,7 @@ DocBlockr is a package for [Sublime Text 2 & 3][sublime] which makes writing doc
 
 1. Open Package Control: `Preferences -> Package Control`
 2. Select `Package Control: Install Package`
-3. Type `DocBlockr` into the search box and select the package to install it
+3. Type `sublime-jsdocs` into the search box and select the package to install it
 
 ## Feature requests & bug reports
 
@@ -20,7 +20,7 @@ the pull request back to that branch.
 
 ## Show your love
 
-[![Click here to lend your support to: DocBlockr and make a donation at pledgie.com!](https://pledgie.com/campaigns/16316.png?skin_name=chrome)](http://pledgie.com/campaigns/16316)
+[![Click here to lend your support to: sublime-jsdocs and make a donation at pledgie.com!](https://pledgie.com/campaigns/16316.png?skin_name=chrome)](http://pledgie.com/campaigns/16316)
 
 ## Changelog
 
@@ -68,7 +68,7 @@ However, if the line directly afterwards contains a function definition, then it
 
 Press <kbd>Tab</kbd> to move forward through the fields, press <kbd>Shift</kbd>+<kbd>Tab</kbd> to move back through the fields.
 
-If there are many arguments, or long variable names, it is sometimes useful to spread the arguments across multiple lines. DocBlockr handles this situation too:
+If there are many arguments, or long variable names, it is sometimes useful to spread the arguments across multiple lines. sublime-jsdocs handles this situation too:
 
 ![](http://spadgos.github.io/sublime-jsdocs/images/long-args.gif)
 
@@ -76,7 +76,7 @@ In languages which support [type hinting][typehinting] or default values, then t
 
 ![](http://spadgos.github.io/sublime-jsdocs/images/type-hinting.gif)
 
-DocBlockr will try to make an intelligent guess about the return value of the function.
+sublime-jsdocs will try to make an intelligent guess about the return value of the function.
 
 - If the function name is or begins with "set" or "add", then no `@return` is inserted.
 - If the function name is or begins with "is" or "has", then it is assumed to return a `Boolean`.
@@ -90,13 +90,13 @@ DocBlockr will try to make an intelligent guess about the return value of the fu
 
 ### Variable documentation
 
-If the line following the docblock contains a variable declaration, DocBlockr will try to determine the data type of the variable and insert that into the comment.
+If the line following the docblock contains a variable declaration, sublime-jsdocs will try to determine the data type of the variable and insert that into the comment.
 
 Press <kbd>space</kbd> or <kbd>shift</kbd>+<kbd>enter</kbd> after an opening `/**` to insert an inline docblock.
 
 ![](http://spadgos.github.io/sublime-jsdocs/images/vars.gif)
 
-DocBlockr will also try to determine the type of the variable from its name. Variables starting with `is` or `has` are assumed to be booleans, and `callback`, `cb`, `done`, `fn`, and `next` are assumed to be functions. If you use your own variable naming system, (e.g. hungarian notation: booleans all start with `b`, arrays start with `arr`), you can define these rules yourself. Use the `jsdocs_notation_map` setting, example:
+sublime-jsdocs will also try to determine the type of the variable from its name. Variables starting with `is` or `has` are assumed to be booleans, and `callback`, `cb`, `done`, `fn`, and `next` are assumed to be functions. If you use your own variable naming system, (e.g. hungarian notation: booleans all start with `b`, arrays start with `arr`), you can define these rules yourself. Use the `jsdocs_notation_map` setting, example:
 
 ```js
 {
@@ -142,7 +142,7 @@ Oftentimes, when documenting a parameter, or adding a description to a tag, your
 
 ### Comment decoration
 
-If you write a double-slash comment and then press `Ctrl+Enter`, DocBlockr will 'decorate' that line for you.
+If you write a double-slash comment and then press `Ctrl+Enter`, sublime-jsdocs will 'decorate' that line for you.
 
     // Foo bar baz<<Ctrl+Enter>>
 
@@ -158,7 +158,7 @@ This can be disabled by changing the `jsdocs_decorate` setting to `false`.
 
 Sometimes, you'll perform some action which clears the fields (sections of text which you can navigate through using <kbd>Tab</kbd>). This leaves you with a number of placeholders in the DocBlock with no easy way to jump to them.
 
-With DocBlockr, you can reparse a comment and reactivate the fields by pressing the hotkey `Alt+Shift+Tab` in OS X or Linux, or `Alt+W` in Windows
+With sublime-jsdocs, you can reparse a comment and reactivate the fields by pressing the hotkey `Alt+Shift+Tab` in OS X or Linux, or `Alt+W` in Windows
 
 ### Reformatting paragraphs
 
@@ -180,7 +180,7 @@ Finally, typing `@` inside a docblock will show a completion list for all tags s
 
 ## Configuration
 
-You can access the configuration settings by selecting `Preferences -> Package Settings -> DocBlockr`.
+You can access the configuration settings by selecting `Preferences -> Package Settings -> sublime-jsdocs`.
 
 *The `jsdocs_*` prefix is a legacy from days gone by...*
 
@@ -258,7 +258,7 @@ You can access the configuration settings by selecting `Preferences -> Package S
 
 - `jsdocs_autoadd_method_tag` *(Boolean)* Add a `@method` tag to docblocks of functions. Default: `false`
 
-- `jsdocs_simple_mode` *(Boolean)* If true, DocBlockr won't add a template when creating a doc block before a function or variable. Useful if you don't want to write Javadoc-style, but still want your editor to help when writing block comments. Default: `false`
+- `jsdocs_simple_mode` *(Boolean)* If true, sublime-jsdocs won't add a template when creating a doc block before a function or variable. Useful if you don't want to write Javadoc-style, but still want your editor to help when writing block comments. Default: `false`
 
 - `jsdocs_lower_case_primitives` *(Boolean)* If true, primitive data types are added in lower case, eg "number" instead of "Number". Default: `false`
 
